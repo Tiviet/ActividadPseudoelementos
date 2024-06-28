@@ -1,0 +1,60 @@
+
+/*after*/
+.pruebaafter::after{
+    content: " --- GUSTO PERSONAL";
+    color: lightseagreen;
+}
+
+/*before*/
+.pruebabefore::before{
+    content: "TEAM CHERRY ";
+    color: lightpink;
+}
+
+/*first-letter*/
+.pruebafirst-letter::first-letter{
+    font-size: 200%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*first-line*/
+.pruebafirst-line::first-line{
+    font-size: 200%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    color: lightcoral;
+}
+
+/*selection*/
+.pruebaselection::selection{
+    background-color: aquamarine;
+    color: black;
+}
+
+/*backdrop*/
+dialog::backdrop {
+    background: linear-gradient(orange, black);
+}
+
+/*placeholder*/
+input::placeholder{
+    color: black;
+    background-color: orange;
+}
+
+/*marker*/
+ul li::marker{
+    color: rgb(235, 9, 167);
+    font-size: 20px;
+}
+
+/*spelling error*/
+.corregir::spelling-error {
+    color: orange;
+  }
+
+/*grammar-error*/
+.gramatica::grammar-error {
+background-color: orange;
+}
+  

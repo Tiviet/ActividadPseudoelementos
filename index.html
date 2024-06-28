@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio pseudoelementos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--Prueba ::after-->
+    <h1>::after</h1>
+    <div>
+        <p class="pruebaafter">The smiths es una gran banda</p>
+    </div>
+
+    <!--Prueba ::before-->
+    <h1>::before</h1>
+    <div>
+        <p class="pruebabefore">creo hollow knight y pronto silksong</p>
+     </div>
+
+    <!--Prueba ::first-letter-->
+    <h1>::first-letter</h1>
+    <div>
+        <p class="pruebafirst-letter">Nick drake fue un buen compositor</p>
+    </div> 
+    
+    <!--Prueba ::first-line-->
+    <h1>::first-line</h1>
+    <div>
+        <p class="pruebafirst-line">Maus nos narra una gran historia sobre la segunda guerra mundial <br> ademas de su realismo y crudeza, su estilo de dibujo es muy interesante</p>
+    </div> 
+
+    <!--Prueba ::selection-->
+    <h1>::selection</h1>
+    <div>
+        <p class="pruebaselection">Arnold Schwarzenegger fue muy importante para el bodybuilding inspirando a futuras generaciones y logrando grandes logros en otros ambitos como el cine y la politica, sin embargo Ronnie Coleman gano mas Mr.Olympias que el</p>
+    </div>   
+    
+   <!--Prueba ::backdrop-->
+   <h1>::backdrop</h1>
+   <dialog>
+    <h2>Este mensaje es una prueba del backdrop</h2>
+    <button onclick="closeDialog()">Cerrar</button>
+   </dialog>  
+  
+   <button onclick="openDialog()">Abrir dialogo de prueba</button>
+   <script>
+   var dialog = document.querySelector('dialog');
+    function openDialog() {  
+      dialog.showModal();
+    }
+    function closeDialog() {  
+      dialog.close();
+    }
+    </script>
+
+    <!--Prueba ::placeholder-->
+    <h1>::placeholder</h1>
+    <input placeholder="Escribe algo aqui" />
+
+    <!--Prueba ::marker-->
+    <h1>::marker</h1>
+    <ul>
+        <li>Warhammer</li>
+        <li>Warframe</li>
+        <li>Starcraft</li>
+    </ul>
+    
+    <!--Prueba ::spelling-error-->
+    <h1>::spelling-error</h1>
+    <p class="corregir" contenteditable spellcheck="true">
+        Hoy vamos a cantar toda la noche una cancion de asodkjmasdon
+    </p>
+
+    <!--Prueba ::grammar-error-->
+    <h1>::grammar-error</h1>
+    <p class="gramatica">
+        Hoy vuamos a correr todo el ia toos juntoos
+    </p>
+      
+</body>
+</html>
